@@ -1,10 +1,20 @@
 # Get_next_line
 
-Project of 21-School (ECOLE 42)
+## Useful function for parsing strings
 
-Purpose of this project is to build program which can take a multiple text files as an input
-and output the string on to the console, just before first occurance of the new_line(\n).
-When function Get_next_line is called second, third or any other time, it continues write the output from the next line of the file until new_line(\n).
-It can maintain multiple text files simulteniosly, and always remember when it stopped write output last time for each file.
-For this purpose it builds and uses linked lists, which it frees when text file is read to the end.
-When file is read complitly function returns 0(zero) and frees list which stored information about that particular file.
+This function reads any file, and returns to you string before new_line ('\n'). <br>
+In place of new_line you now have '\0'. <br>
+This function is efficient when parsing of file string's takes place. <br>
+
+| Function Returns | File Status |
+| ---------------- | ----------- |
+| 1                | A line has been read |
+| 0                | EOF has been reached |
+| -1               | An error occured     |
+
+## Instalation
+
+```sh
+cd GNL
+gcc -D BUFFER_SIZE=(ANY VALUE OF YOUR CHOICE) get_next_line_bonus.c get_next_line_utils_bonus.c (YOUR main.c file is needed)
+```
