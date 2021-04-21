@@ -21,8 +21,11 @@ You point which file you want to read from with fd (file descriptor). <br>
 char *line;
 line = NULL;
 line = get_next_line(fd, line);
+
 ...your operations with delivered line)...
+
 free(line);
+```
 
 ## Instalation
 
